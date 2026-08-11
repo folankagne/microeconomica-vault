@@ -8,7 +8,7 @@ This repo publishes the [Microeconomica](content/README.md) knowledge vault (an 
 
 ## Updating the site (Part I / Part II content)
 
-1. Edit the vault (either directly in `content/`, or in the original Obsidian vault and copy changes into `content/`).
+1. Edit the vault (either directly in `content/`, or in the original Obsidian vault and copy changes into `content/`). If you sync with `rsync -a --delete Microeconomica/ content/`, note that `content/index.md` is **repo-only** (it doesn't exist in the source vault) and `--delete` will remove it — recreate it from git history (`git checkout -- content/index.md`) or re-add it by hand if that happens.
 2. `npx quartz build --serve` to preview locally.
 3. Commit and push to `main` — the GitHub Actions workflow rebuilds and redeploys automatically.
 
@@ -23,8 +23,9 @@ To publish an update to this section after editing it in the vault:
 3. Remove `content/td-tutorials/` again immediately: `rm -rf content/td-tutorials`.
 4. Encrypt the rendered pages in place, overwriting `static-protected/td-tutorials/` with the new ciphertext:
    ```bash
-   npx staticrypt "public/td-tutorials/*" -r -d static-protected/td-tutorials
+   npx staticrypt public/td-tutorials/* -r -d static-protected/td-tutorials
    ```
+   (leave the glob unquoted so the shell expands it — a quoted glob gets passed to StatiCrypt literally and fails with `ENOENT`.)
    This will prompt for the password interactively (or read it from `STATICRYPT_PASSWORD` in your shell env / a local `.env` file — never commit that env file). Re-use the same password as before so existing bookmarked/"remember me" sessions keep working; the pinned salt in the committed `static-protected/td-tutorials/.staticrypt.json` (not secret — see [StatiCrypt's docs](https://github.com/robinmoisson/staticrypt#why-does-staticrypt-create-a-config-file)) keeps re-encryptions consistent.
 5. `rm -rf public` (discard the local build — it's gitignored anyway, just cleaning up).
 6. Commit only `static-protected/td-tutorials/` and push to `main`.

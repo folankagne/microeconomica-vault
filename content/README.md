@@ -18,6 +18,8 @@ prerequisites: [folder/other-entry]
 
 See [`_template.md`](_template.md) for the full skeleton. Cross-links use relative Markdown links (e.g. from within `consumer-theory/`, `[the utility representation theorem](../preferences-and-choice/utility-representation-theorem.md)`), not wikilinks.
 
+For browsing, two extra navigation pages mirror the reading order below: [`Map of Content.md`](Map%20of%20Content.md) embeds every entry's full text inline (`![[...]]`, Obsidian-only) so you can scroll and preview the whole vault from one page; [`Map of Content (List).md`](Map%20of%20Content%20%28List%29.md) is the same order as plain links (portable, lighter) and also carries a vault-statistics table at the top. Both are pure navigation convenience — this README stays the portable source of truth for structure.
+
 Entries covering material **neither the lectures nor the TDs actually taught** — written directly from the textbook to round the vault out into a fuller reference — carry a `beyond-lectures` tag, the same convention used in Econometrica's Part III.
 
 `status` tracks how far an entry has come: **stub** (skeleton only), **drafted** (full prose, not yet cross-checked), **enriched** (reworked against the textbook with worked examples and proofs).

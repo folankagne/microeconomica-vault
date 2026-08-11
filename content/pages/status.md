@@ -40,4 +40,4 @@ Transcribed faithfully from `~/Downloads/Intro Micro 2026 2027/TD_ITM_2026_2027_
 - Lecture 3 does not exist among the course materials (slides jump from 2 to 4); nothing is missing on the vault's side because of this — Lectures 1, 2, 4, 5 together cover exactly Ch.1–5.
 - The book exists in "she"/"he" editions with different problem numbering; this vault follows the "she" edition (see [`pages/sources.md`](sources.md)).
 
-**Grand total: 66 entries** (20 Part I + 39 Part II + 7 TD tutorials) + 11 `00-overview.md` folder indexes + 3 `pages/` + root `README.md` + `_template.md` = 82 files. Part I, Part II, and the TD tutorials section are all complete.
+**Grand total: 66 entries** (20 Part I + 39 Part II + 7 TD tutorials) + 11 `00-overview.md` folder indexes + 3 `pages/` + root `README.md` + `_template.md` + 2 Map of Content pages = 84 files. Part I, Part II, and the TD tutorials section are all complete.
