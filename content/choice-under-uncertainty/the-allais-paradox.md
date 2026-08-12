@@ -15,7 +15,7 @@ prerequisites:
 
 **Question 2.** Choose between $L_2$ (\$4,000 with probability 0.8, else \$0) and $R_2$ (\$3,000 for certain).
 
-The key algebraic relationship: $L_1 = 0.25\cdot L_2\oplus0.75\cdot[\$0]$ and $R_1=0.25\cdot R_2\oplus0.75\cdot[\$0]$ — both pairs are the *same* compound-lottery construction (25% chance of playing the "Question 2" lottery, 75% chance of \$0), differing only in whether $L_2$ or $R_2$ sits in the 25%-probability slot. By [the independence axiom](continuity-and-independence-axioms.md), any expected-utility-consistent preference must rank $L_1$ vs. $R_1$ **exactly** the way it ranks $L_2$ vs. $R_2$ — only two response patterns, ($L_1,L_2$) or ($R_1,R_2$), are consistent with expected utility at all.
+The key algebraic relationship: $L_1 = 0.25\cdot L_2\oplus0.75\cdot[0]$ and $R_1=0.25\cdot R_2\oplus0.75\cdot[0]$ — both pairs are the *same* compound-lottery construction (25% chance of playing the "Question 2" lottery, 75% chance of \$0), differing only in whether $L_2$ or $R_2$ sits in the 25%-probability slot. By [the independence axiom](continuity-and-independence-axioms.md), any expected-utility-consistent preference must rank $L_1$ vs. $R_1$ **exactly** the way it ranks $L_2$ vs. $R_2$ — only two response patterns, ($L_1,L_2$) or ($R_1,R_2$), are consistent with expected utility at all.
 
 ## What people actually choose
 
